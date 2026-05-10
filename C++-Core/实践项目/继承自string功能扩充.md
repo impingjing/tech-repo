@@ -63,25 +63,16 @@ public:
 
 int main() {
     string inputStr;
-    // 读取包含空格的整行字符串（getline 读至换行符）
-    // Read a complete line of string including spaces (getline reads until newline)
+    // 读取包含空格的整行字符串
     getline(cin, inputStr);
     
     int start, len;
-    // 读取两个整数：起始位置和长度
-    // Read two integers: starting position and length
     cin >> start >> len;
 
-    // 将输入字符串隐式转换为自定义的 MyString 对象
-    // Implicitly convert input string to custom MyString object
-    // 这里会自动调用类型转换构造函数：MyString(const string& s)
-    // The type conversion constructor MyString(const string& s) is automatically called here
+    // 将输入字符串转为自定义的 MyString 对象
     MyString ms = inputStr;
     
-    // 调用重载的 operator()，以函数调用语法提取子串
-    // Call the overloaded operator() to extract substring using function call syntax
-    // ms(start, len) 等价于 ms.operator()(start, len)
-    // ms(start, len) is equivalent to ms.operator()(start, len)
+    // 调用重载的 operator() 并输出结果
     cout << ms(start, len) << endl;
 
     return 0;
