@@ -1,0 +1,37 @@
+# --- 1. Python 核心文件 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- 2. 虚拟环境 (根据你的截图，你用的是 .venv) ---
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# --- 3. IDE 配置文件 ---
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# --- 4. Jupyter Notebook 输出 ---
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# --- 5. 操作系统生成文件 ---
+.DS_Store
+Thumbs.db
+
+# --- 6. 敏感信息 (重要！) ---
+.env
+*.key
+secrets.json
+config.ini
